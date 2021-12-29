@@ -41,7 +41,10 @@ try {
     {
       console.log("Connection Failure!");
     }
-    console.log("Connected Successfully!");
+    else
+    {
+      console.log("Connected Successfully!");
+    }    
   });
 }
 catch (e) {
