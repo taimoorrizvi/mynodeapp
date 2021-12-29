@@ -6,8 +6,6 @@ WORKDIR /home/node/app
 
 COPY package*.json ./
 
-RUN apt-get install default-mysql-client -y
-
 USER node
 
 RUN npm install
