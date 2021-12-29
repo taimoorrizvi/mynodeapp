@@ -28,7 +28,6 @@ app.listen(port, function () {
   console.log('Example app listening on port 8080! , Now connecting to DB')
 })
 
-
 //////////////
 var err;
 var con = mysql.createConnection({
@@ -38,7 +37,10 @@ var con = mysql.createConnection({
 });
 try {  
   con.connect(function(err) {
-    if (err) throw err;
+    if (err) 
+    {
+      console.log("Connection Failure!");
+    }
     console.log("Connected Successfully!");
   });
 }
