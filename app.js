@@ -44,10 +44,16 @@ try {
     if (err) 
     {
       console.log("Connection Failure!");
+      console.log("DB_HOST : " + DB_HOST);
+      console.log("DB_USER : " + DB_USER);
+      console.log("DB_PASS : " + DB_PASS);
     }
     else
     {
       console.log("Connected Successfully!");
+      console.log("DB_HOST : " + DB_HOST);
+      console.log("DB_USER : " + DB_USER);
+      console.log("DB_PASS : " + DB_PASS);
     }    
   });
 }
