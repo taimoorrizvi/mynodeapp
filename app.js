@@ -30,10 +30,14 @@ app.listen(port, function () {
 
 //////////////
 var err;
+var DB_HOST   = process.env.DB_HOST;
+var DB_USER   = process.env.DB_USER;
+var DB_PASS   = process.env.DB_PASS;
+
 var con = mysql.createConnection({
-  host: "172.24.149.21",
-  user: "root",
-  password: "login.123"
+  host: DB_HOST,
+  user: DB_USER,
+  password: DB_PASS
 });
 try {  
   con.connect(function(err) {
@@ -52,6 +56,3 @@ catch (e) {
   console.log(err);
   console.log("leaving catch block");
 }
-
-
-
