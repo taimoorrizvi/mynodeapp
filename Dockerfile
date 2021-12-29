@@ -9,6 +9,7 @@ COPY package*.json ./
 USER node
 
 RUN npm install
+RUN npm install mysql
 
 #COPY --chown=node:node . .
 
