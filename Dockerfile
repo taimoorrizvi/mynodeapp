@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "node", "check.js" ]
+CMD [ "node", "app.js" ]
