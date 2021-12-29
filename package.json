@@ -4,7 +4,7 @@
   "description": "Nodejs Demo",
   "author": "Taimoor Rizvi <taimoor.rizvi@bankalfalah.com>",
   "license": "MIT",
-  "main": "app.js",
+  "main": "check.js",
   "keywords": [
     "nodejs",
     "bootstrap",
