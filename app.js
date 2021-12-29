@@ -30,14 +30,23 @@ app.listen(port, function () {
 
 
 //////////////
-
+var err;
 var con = mysql.createConnection({
   host: "172.24.149.21",
   user: "root",
   password: "login.123"
 });
+try {  
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected Successfully!");
+  });
+}
+catch (e) {
+  console.log("entering catch block");
+  console.log(err);
+  console.log("leaving catch block");
+}
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected Successfully!");
-});
+
+
