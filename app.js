@@ -1,6 +1,6 @@
 const express = require('express');
 
-var mysql = require('mysql');
+var mysql = require('mysql2');
 
 const app = express();
 const router = express.Router();
@@ -53,6 +53,8 @@ try {
       console.log("DB_USER : " + DB_USER);
       console.log("DB_PASS : " + DB_PASS);
       console.log(err);
+
+
     }    
   });
 }
