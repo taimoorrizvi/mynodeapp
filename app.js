@@ -52,9 +52,6 @@ try {
       console.log("DB_HOST : " + DB_HOST);
       console.log("DB_USER : " + DB_USER);
       console.log("DB_PASS : " + DB_PASS);
-      console.log(err);
-
-
     }    
   });
 }
